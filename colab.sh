@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-# execute this script in a colab notebook cell
+# add the following to notebook cell,
+
+# ! echo "$PATH" >/.COLABPATH
 # curl -sL https://raw.githubusercontent.com/taicaile/colab-helper/master/path.sh | sudo bash
 
-# save $PATH to /.COLABPATH
+# save $PATH to /.COLABPATH, move this to a notebook cell.
 # echo "$PATH" >/.COLABPATH
 
 # add the following to ~/.bashrc
