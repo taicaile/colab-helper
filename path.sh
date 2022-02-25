@@ -4,11 +4,10 @@
 # curl -sL https://raw.githubusercontent.com/taicaile/colab-helper/master/path.sh | sudo bash
 
 # save $PATH to /.COLABPATH
-echo "$PATH" >/.COLABPATH
+# echo "$PATH" >/.COLABPATH
 
 # add the following to ~/.bashrc
 USER_RC=~/.bashrc
-echo $USER_RC
 LOAD_PATH_LINE="export PATH=$(cat /.COLABPATH)"
 grep -qF -- "$LOAD_PATH_LINE" "$USER_RC" || {
     echo "$LOAD_PATH_LINE" >>"$USER_RC"
